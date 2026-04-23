@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+}
+
+.desktop {
+    width: 100vw;
+    height: 100vh;
+    background-color: #008080;
+}
+
+
+.icon {
+  display: inline-block;
+  text-align: center;
+  width: 80px;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 13px;
+  font-family: 'Courier New', monospace;
+}
+
+
+.icon:hover {
+  background-color: #1a3a5c;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.fenster {
+    display: none;
+    width: 400px;
+    background-color: #c0c0c0;
+    border: 2px solid #ffffff;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.fenster-titel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px;
+    background-color: #000080;
+    color: white;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+}
+
+.fenster-titel span {
+    cursor: pointer;
+    padding: 0 4px;
+}
+
+.fenster-titel span:hover {
+    background-color: #c0392b;
+    color: white;
+}
+
+
+
+
+
+
+.fenster-inhalt {
+    padding: 12px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #000;
+    line-height: 2;
+}
+
+.fenster-inhalt span {
+    display: block;
+    padding: 2px 6px;
+    cursor: pointer;
+}
+
+.fenster-inhalt span:hover {
+    background-color: #000080;
+    color: white;
+}
+
+
+
+
+.datei {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background-color: #ffffff;
+    border: 2px solid #000080;
+}
+
+.datei-inhalt {
+    padding: 16px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #000;
+    line-height: 1.8;
+}

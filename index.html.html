@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Boggel Homeystems</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+    <!-- ORDNER  DOKUMENTE -->
+
+    <div class="desktop">
+
+        <div class="fenster" id="fenster-dokumente">
+            <div class="fenster-titel">
+                📁 Dokumente
+                <span onclick="schliessen('fenster-dokumente')">✕</span>
+            </div>
+
+
+
+            <div class="fenster-inhalt">
+                <span>📄 brief.pdf <br></span>
+                <span>📄 geheim.pdf <br></span>
+                <span onclick="dateiOeffnen('datei-rechnung')">📄 rechnung.pdf <br></span>
+            </div>
+        </div>
+
+
+
+        <div class="datei" id="datei-rechnung">
+            <div class="fenster-titel">
+
+                📄 rechnung.pdf
+                <span onclick="dateiSchliessen('datei-rechnung')">✕</span>
+            </div>
+            <div class="datei-inhalt">
+                RECHNUNG NR. 0042<br>
+                Datum: 01.01.2024<br>
+                <br>
+                1x Fuchs .............. unbezahlbar
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- ORDNER  Emails -->
+        <div class="fenster" id="fenster-Emails">
+            <div class="fenster-titel">
+                📧 Emails
+                <span onclick="schliessen('fenster-Emails')">✕</span>
+            </div>
+
+            <div class="email-header">
+                <div class="email-feld"><span class="email-label">Von:</span> L.Niffelbaum@Cheddargold.de</div>
+                <div class="email-feld"><span class="email-label">An:</span> RatthewBoggus@Cheesemail.de</div>
+                <div class="email-feld"><span class="email-label">Betreff:</span> VERSICHERUNGSFALL 8934677</div>
+            </div>
+            <div class="email-body">
+                <h1> VERSICHERUNGSFALL 8934677</h1>
+                
+                <p>Sehr geehrter Bogglus,
+                leider müssen wir Ihnen Mitteilen 
+                das Ihr Hausrat, insbesondere Ihr 5 Zoll
+                Giga OLED Smart-TV von Cheeseview, <strong>NICHT</strong> von unserer Versicherung 
+                gedeckt sind.</p>
+
+                Das ihre Wohnung aufgebrochen und fallen gelassen wurde fällt leider unter
+                unsere "Freak-Accident Klausel".
+                (Und selber schuld das sie in einem Ei in einem Monsternest hausen) 
+                
+                <p>Dennoch einen käsigen Tag und frohe
+                Cheddar Boggnachten!</p>
+
+                Ihre Cheddargold Versicherung GmbH
+            </div>
+
+            
+        </div>
+
+
+        <!-- ORDNER HAUSAUFGABEN-->
+
+        <div class="fenster" id="fenster-Hausaufgaben">
+            <div class="fenster-titel">
+                📁 Hausaufgaben
+                <span onclick="schliessen('fenster-Hausaufgaben')">✕</span>
+            </div>
+
+            <div class="fenster-inhalt">
+                <span>📄 mathe.pdf</span>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- ICON BEFEHLE -->
+        <div id="icons">
+            <div class="icon" onclick="oeffnen('fenster-dokumente')">📁<br>Dokumente</div>
+
+            <div class="icon" onclick="oeffnen('fenster-Emails')">📧<br>Emails</div>
+
+            <div class="icon" onclick="oeffnen('fenster-Hausaufgaben')">📁<br>Hausaufgaben</div>
+        </div>
+
+
+
+
+
+
+
+
+        <script>
+            function oeffnen(id) {
+                document.getElementById(id).style.display = "block";
+                document.getElementById("icons").style.display = "none";
+            }
+
+            function schliessen(id) {
+                document.getElementById(id).style.display = "none";
+                document.getElementById("icons").style.display = "block";
+
+            }
+
+            function dateiOeffnen(id) {
+                document.getElementById(id).style.display = "block";
+            }
+            function dateiSchliessen(id) {
+                document.getElementById(id).style.display = "none";
+            }
+
+        </script>
+
+
+</body>
+
+</html>
