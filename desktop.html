@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Boggel Homeystems</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+    <!-- ORDNER  DOKUMENTE -->
+
+    <div class="desktop">
+
+        <div class="fenster" id="fenster-dokumente">
+            <div class="fenster-titel">
+                📁 Dokumente
+                <span onclick="schliessen('fenster-dokumente')">✕</span>
+            </div>
+
+
+
+            <div class="fenster-inhalt">
+                <span>📄 brief.pdf <br></span>
+                <span>📄 geheim.pdf <br></span>
+                <span onclick="dateiOeffnen('datei-rechnung')">📄 rechnung.pdf <br></span>
+            </div>
+        </div>
+
+        <div class="datei" id="datei-rechnung">
+            <div class="fenster-titel">
+
+                📄 rechnung.pdf
+                <span onclick="dateiSchliessen('datei-rechnung')">✕</span>
+            </div>
+            <div class="datei-inhalt">
+                RECHNUNG NR. 0042<br>
+                Datum: 25.04.2026<br>
+                <br>
+                Kokosnussstar9 (base) ........ 56 000 KT
+
+                Pilot Plus Package ...........  3 500 KT
+                Sonderlackierung Snownut .....    850 KT
+                Sonderfelgen Catgold .........  1 300 KT
+                
+                Lieferung ....................    500 KT
+            </div>
+        </div>
+
+
+                <div class="datei" id="datei-rechnung">
+            <div class="fenster-titel">
+
+                📄 rechnung.pdf
+                <span onclick="dateiSchliessen('datei-rechnung')">✕</span>
+            </div>
+            <div class="datei-inhalt">
+                RECHNUNG NR. 0042<br>
+                Datum: 25.04.2026<br>
+                <br>
+                Kokosnussstar9 (base) ........ 56 000 KT
+
+                Pilot Plus Package ...........  3 500 KT
+                Sonderlackierung Snownut .....    850 KT
+                Sonderfelgen Catgold .........  1 300 KT
+                
+                Lieferung ....................    500 KT
+            </div>
+        </div>
+
+
+        <!-- ORDNER  Emails -->
+        <div class="fenster" id="fenster-Emails">
+            <div class="fenster-titel">
+                📧 Emails
+                <span onclick="schliessen('fenster-Emails')">✕</span>
+            </div>
+            <div class="fenster-inhalt">
+                <span onclick="dateiOeffnen('email-postfach')">📁 Postfach</span>
+                <span onclick="dateiOeffnen('email-junk')">📁 Junk</span>
+            </div>
+        </div>
+
+
+        <div class="datei" id="email-postfach">
+            <div class="fenster-titel">
+                📁 Postfach
+                <span onclick="dateiSchliessen('email-postfach')">✕</span>
+            </div>
+
+            <div class="fenster-inhalt">
+                <span onclick="dateiOeffnen('email-versicherung')">📨 Versicherungsfall 8934677</span>
+
+            </div>
+
+            <div class="fenster-inhalt">
+                <span onclick="dateiOeffnen('email-kokosnussstar9')">📨 Kokosnussstar9 bereit zur Abholung!!</span>
+
+            </div>
+
+        </div>
+
+<!-- ORDNER  Email -->
+
+        <div class="datei" id="email-junk">
+            <div class="fenster-titel">
+                📁 Junk
+                <span onclick="dateiSchliessen('email-junk')">✕</span>
+            </div>
+            <div class="fenster-inhalt">
+                <span onclick="dateiOeffnen('email-werbung')">📨 ✨ Stickvillages romantischste <br>Orte!!</span>
+            </div>
+        </div>
+
+
+
+        <div class="datei" id="email-versicherung">
+            <div class="fenster-titel">
+                📧 Versicherungsfall 8934677
+                <span onclick="dateiSchliessen('email-versicherung')">✕</span>
+            </div>
+            <div class="email-header">
+                <div class="email-feld"><span class="email-label">Von:</span> L.Niffelbaum@Cheddargold.de</div>
+                <div class="email-feld"><span class="email-label">An:</span> RatthewBoggus@Cheesemail.de</div>
+                <div class="email-feld"><span class="email-label">Betreff:</span> VERSICHERUNGSFALL 8934677</div>
+            </div>
+            <div class="email-body">
+                <h3>VERSICHERUNGSFALL 8934677</h3>
+                <p>Sehr geehrter Herr Boggus,
+                    leider müssen wir Ihnen Mitteilen
+                    das Ihr Hausrat, insbesondere Ihr 5 Zoll
+                    Giga OLED Smart-TV von Cheeseview, <strong>NICHT</strong> von unserer Versicherung
+                    gedeckt sind.</p>
+                <p>Das ihre Wohnung aufgebrochen und fallen gelassen wurde fällt leider unter
+                    unsere "Freak-Accident Klausel".
+                    (Und selber schuld das sie in einem Ei in einem Monsternest hausen)</p>
+                <p>Dennoch einen käsigen Tag und frohe Cheddar Boggnachten!</p>
+                <p>Ihre Cheddargold Versicherung GmbH</p>
+            </div>
+        </div>
+
+
+         <div class="datei" id="email-kokosnussstar9">
+            <div class="fenster-titel">
+                📧 Kokosnussstar9 bereit zur Abholung!!
+                <span onclick="dateiSchliessen('email-kokosnussstar9')">✕</span>
+            </div>
+            <div class="email-header">
+                <div class="email-feld"><span class="email-label">Von:</span> Custsupp@Toycheese.de</div>
+                <div class="email-feld"><span class="email-label">An:</span> RatthewBoggus@Cheesemail.de</div>
+                <div class="email-feld"><span class="email-label">Betreff:</span> Kokosnussstar9 </div>
+            </div>
+            <div class="email-body">
+                <h3>Bestellung Ihres kokosnussstars 9</h3>
+
+                <img src="bilder/car.png" style="width: 70%;">
+
+                <p>Sehr geehrter Herr Boggus,
+                    Es freut uns ihnen mitteilen zu können das Ihr <br>
+                    Kokosnussstar in Vollausstattung in der Farbe Snownut <br>
+                    nun bei uns im Autohaus zur Abholung bereitgestellt ist!</p>
+
+                <p>Bitte bringen sie Ihren Kaufvertrag, Scootschein und Ausweis mit!</p>
+
+                <p>Guten Scoot und bis bald</p>
+                <p>Autohaus Toycheese</p>
+            </div>
+        </div>
+
+
+        <div class="datei" id="email-werbung">
+    <div class="fenster-titel">
+        📨 ✨ Stickvillages romantischste Orte!!!
+        <span onclick="dateiSchliessen('email-werbung')">✕</span>
+    </div>
+    <div class="email-header">
+        <div class="email-feld"><span class="email-label">Von:</span> werbung@romantik-in-stick.de</div>
+        <div class="email-feld"><span class="email-label">An:</span> RatthewBoggus@Cheesemail.de</div>
+        <div class="email-feld"><span class="email-label">Betreff:</span> ✨ Stickvillages romantischste Orte!!!</div>
+    </div>
+    <div class="email-body">
+        <p><h1>Sei mutig! Wenn Sie dir den kleinen Finger <br>
+        geben will nimm die ganze Pfote!!</h1></p>
+
+        <img src="bilder/bruecke.jpg" style="width: 100%;">
+
+        <p> Erober dein Crush während ihr romantisch <br>
+            in die Würm starrt und den fettesten Bastardkarpfen <br> 
+            in ganz Stickvillage bestaunt! </p>
+    </div>
+</div>
+
+
+
+        <!-- ORDNER Arbeit-->
+
+        <div class="fenster" id="fenster-Arbeit">
+            <div class="fenster-titel">
+                📁 Arbeit
+                <span onclick="schliessen('fenster-Arbeit')">✕</span>
+            </div>
+
+            <div class="fenster-inhalt">
+                <span>📄 Käsetemperaturberechnungen</span>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- ICON BEFEHLE -->
+        <div id="icons">
+            <div class="icon" onclick="oeffnen('fenster-dokumente')">📁<br>Dokumente</div>
+
+            <div class="icon" onclick="oeffnen('fenster-Emails')">📧<br>Emails</div>
+
+            <div class="icon" onclick="oeffnen('fenster-Arbeit')">📁<br>Arbeit</div>
+        </div>
+
+
+        <script>
+            function oeffnen(id) {
+                document.getElementById(id).style.display = "block";
+                document.getElementById("icons").style.display = "none";
+            }
+
+            function schliessen(id) {
+                document.getElementById(id).style.display = "none";
+                document.getElementById("icons").style.display = "block";
+
+            }
+
+            function dateiOeffnen(id) {
+    document.getElementById(id).style.display = "block";
+    if (id === 'email-werbung') {
+        setTimeout(function() {
+            alert("⚠️ WARNUNG: Gefährlicher Fuchs gesichtet! Wurde beim Herzstehlen auf der Brücke gesichtet!!! Besuch auf eigene Gefahr!");
+        }, 2000);
+    }
+}
+            function dateiSchliessen(id) {
+                document.getElementById(id).style.display = "none";
+            }
+
+        </script>
+
+
+</body>
+
+</html>
